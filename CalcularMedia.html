@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <script type="text/javascript" src="Java.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <title>Calculadora de média final</title>
+  </head>
+  <body>
+    
+    <h2 class="tit">Calculadora de médias</h2><br>
+    <p>nt: as notas são calculadas de 0 a 100. Por exemplo, se sua nota for "8" basta colocar "80" que dá tudo certo (〃￣︶￣)人(￣︶￣〃)</p>
+    <br><br>
+    <form>
+      <label for="nota1">Primeiro Bimestre → média: </label>
+      <input id="nota1" type="number"><br><br>
+      <br>
+      <label for="nota2">Segundo Bimestre → média: </label>
+      <input id="nota2" type="number"><br><br>
+      <br>
+      <label for="nota3">Terceiro Bimestre → média: </label>
+      <input id="nota3" type="number"><br><br>
+      <br>
+      <label for="nota4">Quarto Bimestre → média: </label>
+      <input id="nota4" type="number"><br><br>
+      <br>
+      <button class="but" onclick="media()">Calcular Média</button>
+    </form>
+
+    <script type="text/javascript">
+
+     function media(){
+      var nota1 = parseFloat(document.getElementById("nota1").value);
+      var nota2 = parseFloat(document.getElementById("nota2").value);
+      var nota3 = parseFloat(document.getElementById("nota3").value);
+      var nota4 = parseFloat(document.getElementById("nota4").value);
+
+      var media = (nota1 + nota2 + nota3 + nota4)/4;
+
+      if (media >=70) {
+        alert("Parabéns! Aprovado, média "+media);
+    } else if (media <40) {
+        alert("Reprovado ;( média "+media);
+    } else if (media >=40 && media <70) {
+        alert("Prova final :) média "+media);
+    }
+
+     }
+  </script>
+
+    <footer>
+    <p>Autoras: Mirela B. Massena, Rosaliny S. Caldeira<br>
+    </footer>
+
+  </body>
+</html>

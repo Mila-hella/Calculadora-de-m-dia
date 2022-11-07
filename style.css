@@ -1,0 +1,51 @@
+body {
+  text-align: center;
+  background-color: #f2e6ff;
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+.tit {
+  color: #8000ff;
+	text-align: center;
+	font-size: 2em;
+}
+
+form {
+	width: 50%;
+	margin: 20px auto;
+}
+
+.but {
+  font-family: 'IBM Plex Mono', monospace;
+	background: #8000ff;
+	color: #f2e6ff;
+	font-weight: bold;
+	font-size: 20px;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 25px;
+}
+
+.but:hover {
+	background: #FF1493;
+	transition: 1s background;
+	cursor: pointer;
+}
+
+p {
+  text-align: center;
+  color: #FF1493;
+  font-weight: bold;
+}
+
+label {
+  color: #420080;
+}
+
+
+footer {
+  text-align: center;
+  top: auto;
+  padding: 3px;
+  color: white;
+}
